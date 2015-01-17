@@ -27,16 +27,27 @@ This is the first draft version of the MVCR that we plan to work collaboratively
 * Receipt refers to a copy of the consent transaction record
 
 * The objective of the consent receipt is to capture the minimum viable consent transaction specific information. This includes:
+
  * Contact information of Data Controller and digital identity  provided by the consenter
+
  * links to policies explaining use of personal and sensitive personal data
+
  * a collection of the purpose(s) (like a collection of items being purchased)
+
  * YES or No Flags (compliant by defualt design)
+
    * 3rd party data sharing
+
    * Collecting Sensitive Personal Information
+
    * Context Requirements Checklist
+
  * Extensions (for those that are not compliant by default)
+
    * Core Compliance/Legal Extension
+
    * 3rd Party Extensions
+
  * Post Release of this version v.06 of the consent receipt  specification we will be writing extension that greatly expand the scope and use of this Minimum Viable format.  Extended so that it can address the notice and consent requirements for very complex data control issues by enabling people with consent management. 
 
 ## Purpose
@@ -76,7 +87,7 @@ The MVCR will enable simple two party personal data transactions to be recorded 
 ## Glossary
  
 | Term | Definition | Example |
-| ----
+| ---- | ---- | ---- |
 | Consent Receipt (CR) | A record of a single consent transaction provided to the data subject at the point of consent.  | This record is a summary of legal requirements of  the notice provided at the point of consent about the collection, use and disclosure of information by a data controller, and has given consent for that collection, use and disclosure. |
 | Data Controller (DC) | The organization or individual that is accountable for the operation of the web site. | This is contact information for the management of consent. |
 | Data Subject (DS) | The natural person that is registering on the web site. | This is typically when a person registers to get access to a web site service. |
@@ -120,7 +131,7 @@ DC’s that share personally identifiable information and/or collect sensitive p
 
 ### Consent Notice Data
 | Field | Description | Example (XDI) |
-| -
+| ---- | ---- | ---- |
 | Data Subject | Name or pseudonym of the Data Subject | Data Subject: Alice [=]!:uuid:1111 |
 | Sensitive Personal Data Flag (Y/N) | Flag to categorise the information collected as sensitive or not.  Each jurisdiction has classifications of sensitive personal information (privacy): The generally include health, financial, child protection (>14), youth protection(>19 or >22), educational, religious, or political categorisations.  May trigger additional legal notice and consent requirements | [#receipt]!:uuid:1234<#sensitive>&/&/true |
 | Data Controller | Name of the entity issuing the consent receipt. This is the entity accountable by law for the information collected. | Data Controller: Amazon [+]!:uuid:9999 | 
@@ -139,7 +150,7 @@ Extensions are appended to the MVCR to enhance the compliance, organisational ob
 ### Extension Types (added as site specific fields)
 
 | Core Extension | Extend the MVCR | 
-|--
+| ---- | ---- |
 | Operation Context | Core extension Note: For the MVCR draft there is only the online website format context, additional context can be added by extension |
 | 3rd Party Extension | Extension that Lists Third Parties | 
 | PII List Extensions | Summarizes or lists the PII Collected and used by the DC | 
@@ -165,7 +176,7 @@ Here is a beginning to  a checklist of elements for Operational Consent
 
  
 | Context: Location Specific | Description | UK | EU | USA | Canada |
-|--
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | Website Consent Form | Provides notice at point of consent for the consequences of not provisioning consent | X | X |  |  | 
 | Website consent form | Indicates what is required, and optional information, to provide for consent | X | X |  |  | 
 | Mobile application |  |  |  |  |  | 
@@ -199,7 +210,7 @@ This draft of the specification is based on the following scenario.
    * The use case ends when the user accepts the consent receipt, or declines the offer.
  
 | Description Detail | Notes |
-|--
+| ---- | ---- |
 | Related Requirements | The provision of a consent receipt enables data providers to demonstrate their compliance with regulatory requirements for notice and consent. |
 | Preconditions | Before a consent receipt can be issued the following conditions must be true: *  The user has provided the necessary information about themselves to complete registration ** This should include sufficient notice to meet regulatory requirements for the jurisdiction in which the site operates * The organization has a privacy policy and/or terms of use and/or equivalent documentation to complete the mandatory fields in the consent receipt. * The consent receipt that will be issued is authorized by an appropriate authority in the organization (i.e. this consent receipt is a business record of a transaction). |
 | Successful End Conditions | • A consent receipt that contains the fields described below has been generated and offered to the data subject. • A copy of the consent receipt is stored by the Data Controller. • A record of the creation of the consent receipt has been created and logged. • The data subject has received a copy of the consent receipt or has indicated that they do not want a copy of the consent receipt. o The data subject’s decision about accepting or not accepting the consent receipt will be logged. |
