@@ -1,6 +1,7 @@
 # MVCR-Spec-proposed restructure
 ## Minimum Viable Consent Receipt Specification
 Based on draft version 0.6
+Editor: Heather Flanagan
 
 # Abstract
 
