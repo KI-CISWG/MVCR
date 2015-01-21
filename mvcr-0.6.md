@@ -6,7 +6,7 @@ Status: T
 
 Draft version 0.6 specification for MVCR Code Generator and Minimum Viable Consent Receipt Data Description
 
-This is the first draft version of the MVCR that we plan to work collaboratively on using Git Hub Version Tracking
+This is the first draft version of the MVCR collaboratively developed using Git Hub Version Tracking
 
 # Scope
 
