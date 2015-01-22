@@ -10,17 +10,13 @@ This is the first draft version of the MVCR collaboratively developed using Git 
 
 # Scope
 
-* The objective is to develop a core consent format for the record of a 
-consent transaction.  
+* The objective is to develop a core consent format for the record of a consent transaction.  
 
-* As a result this work is this specification is for the development of 
-the Minimum Viable Consent Receipt (MVCR).
+* As a result this work is this specification is for the development of the Minimum Viable Consent Receipt (MVCR).
 
-* The aim of this format is to pull out the core requirements for a consent 
-to be legitimate, and to put it into a highly usable structure. 
+* The aim of this format is to pull out the core requirements for a consent to be legitimate, and to put it into a highly usable structure. 
 
-* This version of the specification is being written for simple basic use 
-on websites as the context.    
+* This version of the specification is being written for simple basic use on websites as the context.    
 
 * This version of the consent receipt is for explicit consent in this context.
 
