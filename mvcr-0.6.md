@@ -1,8 +1,5 @@
 # MVCRT-Spec-proposed restructure
 ## Minimum Viable Consent Receipt  Specification
-Draft version 0.6
-
-Draft version 0.6 specification for MVCR Code Generator and Minimum Viable Consent Receipt Data Description
 
 The 0.6 version of this specification focuses on the user experience--
 specifically, what they will see in a Minimum Viable Consent Receipt.  Future
@@ -195,42 +192,6 @@ update broken links and the consent before receipt can be used as a token?)
 
  * Extensions
 
-## Flags Defined
-
-### 3rd  Party sharing (TBD)
-
-### Sensitive Personal Data (TBD)
-
-### Operational Context (OC): Consent Context Scope & Requirements
-
-As a part of creating a receipt for a Data Subject (DS) there are often legal 
-requirements based on the operational content. OC requires that a checklist 
-accompany the receipt. This functions as a flag: YES or NO.
-
-If YES, there is a self-assertion that the receipt and company side 
-consent management practices follow the legal requirements for fair and 
-reasonable consent harvesting.
-
-Consent Context Flag in the MVCR is optional.
-
-Non-Checked provides a default status of partially compliant and signals 
-ability  to respond if required. (Note see compliance scale)
-
-We have started to collected a default subset of option (Variables) to be 
-legally fair and reasonable.
-
-[HF: The mention of a checklist that functions as a single-value flag doesn't
-make sense.  Should this be something other than a checklist? For example,
-perhaps a set of variables that have separate fields for context and action.  
-Example: OC_context=UK;notice_provided=yes/no] I think this needs to be a checklist clicked and agreed upon by the provisioning org.
-
-[ML: HMMM,, good food for thought.  I think we are thinking very similar things, except a default checklist is conceptually placed on the back of the receipt and used to help educate. But maybe variables is the a tasks for this spec or an extension.]  [Need to discuss: Does the MVCR require  a variable set? if so where an when?]
-
-Operational Context - Defined by either jurisdictionally specific requirements 
-or use case specific requirements. The OC also is a space/scope for company 
-side assertions (e.g. customer service, quality, etc.).
-
-
 ## MVCR - Compliant by Default
 
 The objective of the MVCR specification is to make a MVCR which by default 
@@ -276,7 +237,7 @@ Approach: The MVCR requires some implementation and testing for a
 jurisdictional exemption alanlysis to be 100% sure of this assertion. A good 
 use case for this would be Do Not Track Requirement.
 
-### Consent Notice Data Structure
+### Consent Notice Fields and Descriptions
 
 | Term | Definition | Example |
 | ---- | ---- | ---- |
@@ -291,7 +252,6 @@ use case for this would be Do Not Track Requirement.
   | Trusted Services | A provider of Trust Product, like a Privacy icons,a certification for standard assurance, a reputation services, a trusted networks, trusted protocols, etc |  |
   | Viable | Meets or exceeds regulatory minimum for notice in the jurisdiction where it is issued |  |
   | Open Notice Framework | An Open Notice is a standard consent format for policy notice summaries as required by law.  The use of an Open Notice is further facilitated by a framework which enables the independent use of the Open Notice.
-
 
 
 # Appendix A: Usability Metrics
@@ -322,4 +282,41 @@ Metrics
 * Scalability
 * Automation
 * Reciprocity
+
+
+# Appendix B: Flags Defined
+
+### 3rd  Party sharing (TBD)
+
+### Sensitive Personal Data (TBD)
+
+### Operational Context (OC): Consent Context Scope & Requirements
+
+As a part of creating a receipt for a Data Subject (DS) there are often legal 
+requirements based on the operational content. OC requires that a checklist 
+accompany the receipt. This functions as a flag: YES or NO.
+
+If YES, there is a self-assertion that the receipt and company side 
+consent management practices follow the legal requirements for fair and 
+reasonable consent harvesting.
+
+Consent Context Flag in the MVCR is optional.
+
+Non-Checked provides a default status of partially compliant and signals 
+ability  to respond if required. (Note see compliance scale)
+
+We have started to collected a default subset of option (Variables) to be 
+legally fair and reasonable.
+
+[HF: The mention of a checklist that functions as a single-value flag doesn't
+make sense.  Should this be something other than a checklist? For example,
+perhaps a set of variables that have separate fields for context and action.  
+Example: OC_context=UK;notice_provided=yes/no] I think this needs to be a checklist clicked and agreed upon by the provisioning org.
+
+[ML: HMMM,, good food for thought.  I think we are thinking very similar things, except a default checklist is conceptually placed on the back of the receipt and used to help educate. But maybe variables is the a tasks for this spec or an extension.]  [Need to discuss: Does the MVCR require  a variable set? if so where an when?]
+
+Operational Context - Defined by either jurisdictionally specific requirements 
+or use case specific requirements. The OC also is a space/scope for company 
+side assertions (e.g. customer service, quality, etc.).
+
 
