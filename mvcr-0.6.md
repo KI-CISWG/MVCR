@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # MVCR-Spec-proposed restructure
+=======
+ MVCR-Spec- v0.6
+>>>>>>> Stashed changes
 ## Minimum Viable Consent Receipt Specification
 <<<<<<< HEAD
 Draft version 0.6
@@ -424,3 +428,4 @@ Sample code generator page
 | v.04 | Done | Mark Lizar, Markus Sabadello | John Wunderlich, Mary Hodder | Spec Outline & Demo (Mark), Technical Walkthrough (Markus)|
 | v.05 | Done | John Wunderlich | Mary Hodder, Mark Lizar | Word updating. |
 | v.06 | In process | John Wunderlich | Mary Hodder | Clean up; Added Basic Use Case Describe; MVCR Generator |
+
