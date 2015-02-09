@@ -9,17 +9,17 @@ implementation of an MVCR.
 # Abstract
 Organizations that collect personally identifiable information about 
 individuals have legal obligations, regardless of jurisdiction or method of 
-collectio.  These obligations are reflected in privacy policies, consent 
-policies  notice to  individuals of the purpose for collecting personal 
-information.(Ref needed ISTPA)  Informed consent requires notice, without 
-sufficent notice of purpose informed consent is better referred to asset for 
-obvious pupose. Legally, organisations obtain consent from individuals with 
+collectio.  These obligations are reflected in privacy policies, which are consent based
+policy  notices to  individuals to specify the purpose for collecting personal 
+information.(Ref needed ISTPA)  Consent requires notice, without 
+sufficent notice of purpose informed consent is better referred to assent for 
+an obvious pupose. Legally, organisations obtain consent from individuals with 
 respect to how their personal information may be collected, used, disclosed, 
 retained, or destroyed by the data collector.
 
 This specification defines the technical requirements for a Minimum Viable 
 Consent Receipt  (MVCR).  For Organisations this format is intended to 
-demonstate an open framework to streamline consent and compliance issues 
+demonstate an open framework to streamline consent, usability and compliance issues, 
 across jurisdictions.
 
 Its minimum function is to provide individuals with a private and usable audit 
@@ -44,8 +44,7 @@ collecting and using personally identifiable information.
 An MVCR, once created, is a record of the intent and permission to process 
 personal information.  After an MVCR is received by an individual, it serves
 as a record that can be used by that individual to further manage consent 
-and acknowledge the allowed use of personal data by an [HF: organization? 
-application?].  For example, receiving a consent receipt immediately during
+and acknowledge the allowed use of personal data.  For example, receiving a consent receipt immediately during
 or after a web, mobile or other internet-based service transaction provides 
 an individual with an opportunity to confirm, and if needed, challenge 
 collection and control of personal information. 
@@ -53,12 +52,12 @@ collection and control of personal information.
 Similarly, the MVCR enables the data controller to send a clear 
 signal of trust and compliance that states they will do with 
 personal information.  The consent receipt provides clarity and, through 
-the resulting process transparency, adds trust and protection for all 
+the resulting process, transparency that adds trust and protection for all 
 parties against misunderstanding.
 
 Above all else, the MVCR is specifically designed to provide the minimum 
 viable and required legal notice to a data subject. This allows services that
-use the MVCR to demonstrate compliance with common/basic data privacy and 
+use the MVCR to demonstrate existing compliance with common/basic data privacy and 
 protection regulation found within and across jurisdictions. 
 
 The details of the specification are designed to be both human- and machine-
@@ -101,17 +100,17 @@ the use of their data.
 
 * The objective is to develop a core consent format for the record of a consent transaction.  
 
-* As a result this work is this specification is for the development of the Minimum Viable Consent Receipt (MVCR).
+* As a result this work is a specification  for the development of the Minimum Viable Consent Receipt (MVCR) into a standards candidtate.
 
 * The aim of this format is to pull out the core requirements for a consent to be legitimate, and to put it into a highly usable structure. 
 
-* This version of the specification is being written for simple basic use on websites as the context.    
+* This version of the specification is being written for simple basic use on websites as the context.    (ML-Disagree, this version should be the core format) 
 
 * This version of the consent receipt is for explicit consent in this context.
 
-* The term ‘Minimum Viable’ in this context, the most basic  and common 
+* The term ‘Minimum Viable’ in this context, the most basic  and common consent requirements found across jurisdictions
 
-Note that:
+Note in the technical sepcification v.07:
 
 1. The receipt MUST have a property to authenticate the origin. 
 
@@ -133,7 +132,7 @@ Note that:
 
 7. The payload SHOULD include the following properties: 
 
- a) [TBD]
+ a) [TBD] 
 
 ## Required Fields
 
@@ -141,7 +140,6 @@ A Minimum Viable Consent Receipt (MVCR) is comprised of several pre-defined
 data fields that are used to capture legally required consent elements of a
 consent transaction.
 
-(Note: The determination of legally required is from the Consent Legal Framework - a core extension - which references all of the consent legal requirements by jurisdiction. Reference link needed)
 
 All consent receipts require that a DC do the following:
 
@@ -158,8 +156,8 @@ collected.
 
 * Provide an optional contextual requirements checklist with a Y/blank/N Flag. with the minimum statement: I agree that this info is true and that I will follow the laws of my jurisdiction.
 
-An additional log of consent related information will also be captured.
-- Time & Date, do not track flags, related policies, identifier used to consent with and any other links to policies included in the consent, TOS/Cookies etc.  
+An additional log of consent related information will also be captured so the integrity of the consent can be verified.
+* Time & Date, do not track flags, related policies (TOS/Cookies), identifier used to consent with and any other links to policies included in the consent. 
 
 
 ## MVCR Fields
@@ -167,7 +165,7 @@ The fields consists of:
 
  * Contact information of Data Controller
 
- * Identity provided by the individual.
+ * Identity provided by the individual
 
  * Link to privacy policy
  (note: static link format required - raised by John W) (Comment: Note: For 
@@ -195,9 +193,9 @@ update broken links and the consent before receipt can be used as a token?)
 ## MVCR - Compliant by Default
 
 The objective of the MVCR specification is to make a MVCR which by default 
-settings is compliant by default.  
+settings is compliant with consent requirements by default.  
 
- Defined specifically with the defualt settings in the MVCR which are 
+Defined specifically with the defualt settings in the MVCR which are 
 represented by the Yes/No  flag settings -  (No) 3rd party sharing, (No) 
 collection of sensitive personal data, and an optional,checklist for self 
 asserting that the consent harvested is, fair, reasonable and conforms to the 
@@ -205,7 +203,7 @@ law where it is issued.
 
 Compliant by default represents the express (or highly automated) version of 
 consent, and is used to match the current 'click ware' consent system that is 
-common today. It is this version that  is based on compliance requirements.  
+common today. It is this version that is based on compliance requirements.  
 Compliance requirements are based ultimately on a number of sources, legal 
 regulation,  3rd party contracts, previous legal judgment, case and statute 
 law and best practices.  These all become relevant beyond the minimum viable 
@@ -213,23 +211,25 @@ CR default self assertions.
 
 That being said, the consent receipt is also being designd to be a consent 
 token.  So that it can be used with third parties to manage consent 
-independently of the service provider.  
+independently of the service provider. 
+
+The consent receipt is based on ISTPA work with reference: (http://xml.coverpages.org/ISTPA-AnalysisOfPrivacyPrinciplesV2.pdf)
 
 (Discussion Note: Compliance by default approach is designed for an audience 
 that wants an open commercial channel for 3rd party consent and trust services.)
 
 Nevertheless, just the provision of a consent receipt is signal of partial 
-compliance and ability to assist in consent management if needed.
+compliance with additional usability of contact and context information enabling people to respond and organisations to assist in consent management if needed.
 
-[Ref - UK DP scale  of compliance reference and proposed consent receipt scale of compliance ]
+[Ref - UK ICO-Risk Assurance Scale reference and proposed consent receipt scale of assurance ]
 
 * Every extension will provide additional checklist requirements and variables.
 
-{Discussion: does this require CIS-Wg to propose a common methd for registering variables to the consent receipt specification}.
+{Discussion: does this require CIS-Wg to propose a common method for registering variables to the consent receipt specification}.
 
 Note: In each jurisdiction their are exceptions to consent which are not 
-covered in the MVCR.  The rationale is that the MVCR defaults provide a very 
-low risk of being non-compliant, and in the case that there is an exemption to 
+covered in the MVCR.  The rationale is that the MVCR defaults provide asurrance of a very 
+low risk of being non-compliant with consent requiremetns, and in the case that there is an exemption to 
 compliance, the organisation is still able to evolve their practice to be 
 compliant.
 
@@ -293,7 +293,7 @@ Metrics
 ### Operational Context (OC): Consent Context Scope & Requirements
 
 As a part of creating a receipt for a Data Subject (DS) there are often legal 
-requirements based on the operational content. OC requires that a checklist 
+requirements based on the operational content(OC). OC requires that a checklist 
 accompany the receipt. This functions as a flag: YES or NO.
 
 If YES, there is a self-assertion that the receipt and company side 
@@ -303,17 +303,16 @@ reasonable consent harvesting.
 Consent Context Flag in the MVCR is optional.
 
 Non-Checked provides a default status of partially compliant and signals 
-ability  to respond if required. (Note see compliance scale)
+ability  to respond if required. (Note see ICO's - Risk Assurance Scale)
 
-We have started to collected a default subset of option (Variables) to be 
-legally fair and reasonable.
+We have started to collected a default subset of operational contexts and (Variables) to link requirements to the terms fair and reasonable.
 
 [HF: The mention of a checklist that functions as a single-value flag doesn't
 make sense.  Should this be something other than a checklist? For example,
 perhaps a set of variables that have separate fields for context and action.  
 Example: OC_context=UK;notice_provided=yes/no] I think this needs to be a checklist clicked and agreed upon by the provisioning org.
 
-[ML: HMMM,, good food for thought.  I think we are thinking very similar things, except a default checklist is conceptually placed on the back of the receipt and used to help educate. But maybe variables is the a tasks for this spec or an extension.]  [Need to discuss: Does the MVCR require  a variable set? if so where an when?]
+[ML: For V.07]  [Need to discuss: Does the MVCR require  a variable set? if so where an when?]
 
 Operational Context - Defined by either jurisdictionally specific requirements 
 or use case specific requirements. The OC also is a space/scope for company 
