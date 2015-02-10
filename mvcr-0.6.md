@@ -7,7 +7,13 @@ versions of this specification will add material to allow for the technical
 implementation of an MVCR.
 
 # Abstract
-Organizations that collect personally identifiable information about individuals usually have obligations related to that persona, regardless of jurisdiction or method of collection.  These obligations are often met by privacy policies which are notices to individuals about how their personal information may be collected, used, disclosed, or retained. These policies often serve as the only notice provided to indvidiuals, and from which a presumption of consent is derived. Sometimes the only privacy statement that is available is a web privacy statement, which speaks only to cookies or web uses of data. Organisations should obtain consent from individuals , or have a legal obligation, with respect to how personal information will be collected, used, disclosed, retained, or destroyed by the organization. Rather than depend on an obscure privacy policy we propose to provide indviduals with a Consent Receipt containing the requisite information at or immediately after their personal information is collected.
+Organizations that collect personally identifiable information about individuals usually have jurisdictionally specific obligations related to that personal information, regardless of jurisdiction or method of collection.  These obligations are often met by privacy policies which are notices to individuals about how their personal information may be collected, used, disclosed, or retained. These policies often serve as the only notice provided to indvidiuals, and from which a presumption of consent is derived. Sometimes the only privacy statement that is available is a web privacy statement, which speaks only to cookies or web uses of data. Organisations should, as a result of either legal or ethical
+requirements, obtain consent from individuals with respect to how
+personal information will be collected, used, disclosed, retained, or
+destroyed by the organization.  Rather than depend on a separate privacy
+policy, we propose to provide individuals with a Consent Receipt that
+contains the detail on what, exactly, the user has consented to, at or
+immediately after their personal information is collected.
 
 This specification defines the technical requirements for a Minimum Viable Consent Receipt  (MVCR).  For Organisations this format is intended to demonstate an open framework to streamline consent, usability and compliance issues, across jurisdictions.
 
