@@ -7,24 +7,11 @@ versions of this specification will add material to allow for the technical
 implementation of an MVCR.
 
 # Abstract
-Organizations that collect personally identifiable information about 
-individuals have legal obligations, regardless of jurisdiction or method of 
-collectio.  These obligations are reflected in privacy policies, which are consent based
-policy  notices to  individuals to specify the purpose for collecting personal 
-information.(Ref needed ISTPA)  Consent requires notice, without 
-sufficent notice of purpose informed consent is better referred to assent for 
-an obvious pupose. Legally, organisations obtain consent from individuals with 
-respect to how their personal information may be collected, used, disclosed, 
-retained, or destroyed by the data collector.
+Organizations that collect personally identifiable information about individuals usually have obligations related to that persona, regardless of jurisdiction or method of collection.  These obligations are often met by privacy policies which are notices to individuals about how their personal information may be collected, used, disclosed, or retained. These policies often serve as the only notice provided to indvidiuals, and from which a presumption of consent is derived. Sometimes the only privacy statement that is available is a web privacy statement, which speaks only to cookies or web uses of data. Organisations should obtain consent from individuals , or have a legal obligation, with respect to how personal information will be collected, used, disclosed, retained, or destroyed by the organization. Rather than depend on an obscure privacy policy we propose to provide indviduals with a Consent Receipt containing the requisite information at or immediately after their personal information is collected.
 
-This specification defines the technical requirements for a Minimum Viable 
-Consent Receipt  (MVCR).  For Organisations this format is intended to 
-demonstate an open framework to streamline consent, usability and compliance issues, 
-across jurisdictions.
+This specification defines the technical requirements for a Minimum Viable Consent Receipt  (MVCR).  For Organisations this format is intended to demonstate an open framework to streamline consent, usability and compliance issues, across jurisdictions.
 
-Its minimum function is to provide individuals with a private and usable audit 
-trail regarding any consent given or received in the course of collecting and 
-consenting to the use of personally identifiable information.
+Its minimum function is to enable individuals to have a usable audit trail regarding any consent given or received in the course of their relationship with an organization that collected their personally identifiable information.
 
 
 # Introduction
