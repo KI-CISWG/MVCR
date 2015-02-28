@@ -10,14 +10,14 @@ The MVCR is written with terms and reference in context of:
 * ISO/IEC 29100	Information technology – Security techniques – Privacy framework
 * ISO/IEC 29115	Information technology – Security techniques – Entity Authentication Assurance
 
-
 Supporting reference to ISTPA: Analysis of privacy principles:
 * ISTPA, (2007) Analysis of Privacy Principals, pg. 64, [Online] http://www.istpa.org/ [Accessed Nov, 4 2010]
+* Minister of Economy Office, Japan (2014) Guideline for the online notice and consent from consumers, http://www.meti.go.jp/press/2014/10/20141017002/20141017002a.pdf.  [Includes examples of a consent receipt in guidlines compliant with ISO 29100]  
 
 # Problem Described
 Currently there is a static and binary notice and consent infrastructure that is regulated and neither usable nor suitable for it intended purposes.  An individual is expected to perform beyond what is reasonable in the current context. They are expected to find and read policies, understand all of the information sharing relationships in context, manage each consent and personal information relationship with their associated identities with all of these organisations. In other words, each individual is expected to understand what information is being collected about them, how it will be used and for what purposes, with which types of entities their information will be shared. All of this is expected without having the ability to take a record and manage consent independently out of context.  Meanwhile in context people are expected to keep track of all active consent, when making new consent agreements.
 
-As information sharing is dramatically increasing, the capacity for people to manage information sharing and identity based relationships needs also to increase.  A specification for a minimum core generically viable consent can address specific jurisdictional requirements and provided evidence toward compliance with ISO 29100.
+As information sharing is dramatically increasing, the capacity for people to manage information sharing and identity based relationships needs also to increase.  A specification for a minimum core generically viable consent can address specific jurisdictional requirements and provide use to create consent for organisations that are  compliant with ISO 29100.
 
 Individuals' capacities to manage their privacy is then increased as they are able to aggregate and manage consent & information sharing relationships with the consent receipt.  Organisations can use these receipts to streamline the consent experience.  Consent receipts also provide a channel for  organisations to advertise trust.
 
