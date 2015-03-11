@@ -12,7 +12,7 @@ The MVCR is written with terms and reference in context of:
 
 Supporting reference to ISTPA: Analysis of privacy principles:
 * ISTPA, (2007) Analysis of Privacy Principals, pg. 64, [Online] http://www.istpa.org/ [Accessed Nov, 4 2010]
-* Minister of Economy Office, Japan (2014) Guideline for the online notice and consent from consumers, http://www.meti.go.jp/press/2014/10/20141017002/20141017002a.pdf.  [Includes examples of a consent receipt in guidlines compliant with ISO 29100]  
+* Minister of Economy Office, Japan (2014) Guideline for the online notice and consent from consumers, http://www.meti.go.jp/press/2014/10/20141017002/20141017002a.pdf.  [Includes examples of a consent receipt in guidelines proposed in the context of ISO 29100]
 
 # Problem Described
 Currently there is a static and binary notice and consent infrastructure that is regulated and neither usable nor suitable for it intended purposes.  An individual is expected to perform beyond what is reasonable in the current context. They are expected to find and read policies, understand all of the information sharing relationships in context, manage each consent and personal information relationship with their associated identities with all of these organisations. In other words, each individual is expected to understand what information is being collected about them, how it will be used and for what purposes, with which types of entities their information will be shared. All of this is expected without having the ability to take a record and manage consent independently out of context.  Meanwhile in context people are expected to keep track of all active consent, when making new consent agreements.
@@ -54,7 +54,7 @@ Organisations provide consent receipts when they obtain or assume consent and co
 3. Regulators - (privacy and data protection enforcement)
 Regulators i.e. the FTC in the USA, the Canadian Federal and Provincial Privacy Commissioners, the EU Data Protection Regulators. Regulators may provide public processes for administration and enforcement of regulation in regards to notice and consent requirements
 
-In summary, this MVCR receipt specifification addresses the requirements of these three stakeholder groups with the aim to provide a business infrastructure organizations will implement, that people can use and that regulators can enforce.
+In summary, this MVCR receipt specification addresses the requirements of these three stakeholder groups with the aim to provide a business infrastructure organizations will implement, that people can use and that regulators can enforce.
 
 
 ## Intellectual Property Rights
@@ -76,7 +76,7 @@ Kantara Initiative is a non-profit membership organization that connects busines
 7. The payload SHOULD include the following properties:
   a) [TBD]
 8. The receipt MUST be systematically usable and automatically  discoverable
-9. Receipts MUST contiain the minmum information to enable enable request for more information if required
+9. Receipts MUST contain the minimum information to enable enable request for more information if required
 
 Be usable as a consent token to enable transparent digital audit trails of consent for information sharing relationships.
 
@@ -105,7 +105,7 @@ the consent receipt to be audit-able and verifiable the consent policy should
 be accessible by any entity with the URI for the policy. Subsequent changes to
 the policy should not invalidate the URI for the policy in effect with the CR
 was issued.)
-ML: Should we consider stipulating that the uri be domain.com/privacy by default for MVCR with no payload.
+ML: Should we consider stipulating that the URI be domain.com/privacy by default for MVCR with no payload.
 JW: If the URI is not broken, but the policy has changed, how can this be known or addressed by the user?
 ML: If the privacy policy is apart of the payload of the receipt and this payload was signed by the policy provider. Or if the policy is registered and kept public by the registrar e.g. TOSBACK)
 
@@ -158,24 +158,18 @@ informing PII principals about the consequences, if any, of withholding their co
 
 informing on the ways to withdraw consent
 
-NOTE: Burying the privacy related notice obscurely in the other matters and having user accept it is a common privacy attack. 
+NOTE: Burying the privacy related notice obscurely in the other matters and having user accept it is a common privacy attack.
 
 ## OC-Audit Notes
  is Consent is action based
- is it an independant permission (i.e. only one policy  with same scopes of purpose)
- 
- ## OC-Meaningful Changes Requiring a New Consent Reciept
+ is it an independent permission (i.e. only one policy  with same scopes of purpose)
+
+ ## OC-Meaningful Changes Requiring a New Consent Receipt
  - Change in overview of the service
  - change the PII Controller
  - change PII items being collected
  - change the purpose of use to something outside the scope
  - change 3rd party- unless DS consented to scope of 3rd parties and this is within scope
- - consent required if extend retention period or extend disposa date
+ - consent required if extend retention period or extend disposal date
  - change matters related to disclosure, suspension of use, correction, deletion, suspension of provision or revoking of consent
  - change the contact information for inquiry
- 
- 
- 
- 
- 
-
