@@ -77,24 +77,9 @@ Kantara Initiative is a non-profit membership organization that connects busines
   a) [TBD]
 8. The receipt MUST be systematically usable and automatically  discoverable
 9. Receipts MUST contain the minimum information to enable enable request for more information if required
+10. Receipts MUST contain the minimum information to enable requests for more information if required
 
-Be usable as a consent token to enable transparent digital audit trails of consent for information sharing relationships.
-
-## MVCR - Default Settings & Design (TBF V.06)
-
-Default settings in the MVCR which are represented by the Yes/No  flag settings:
-  (No) 3rd party sharing,
-  (No) collection of sensitive personal data, and
-  an optional checklist for self-asserting that the consent harvested is, fair, reasonable and conforms to the law where it is issued.
-
-Compliant by default represents the express (or highly automated) version of consent, and is used to match the current 'click ware' consent system that is common today with profiles that are access controlled by the data subject.  Compliance requirements are based ultimately on a number of sources, which are required depending on the context of the consent and the data shared.   This include:  legal regulation,  3rd party contracts, previous legal judgment, case and statute law and best practices.  These all become relevant beyond the minimum viable CR default self assertions.
-
-The consent receipt and default settings are based on ISTPA work with reference: (http://xml.coverpages.org/ISTPA-AnalysisOfPrivacyPrinciplesV2.pdf)
-
-Note: (TBD V.07) In each jurisdiction their are exceptions to consent which are not
-covered in the MVCR but should be referenced in reference the MVCR default settings.
-
-## MVCR Core Fields (TBF v.07)
+### Consent Notice Fields and Descriptions (TBF v.07)
 The fields consists of:
 * Contact information of Data Controller
 * Identity provided by the individual
