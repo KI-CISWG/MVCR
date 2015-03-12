@@ -142,3 +142,4 @@ NOTE: Burying the privacy related notice obscurely in the other matters and havi
  - consent required if extend retention period or extend disposal date
  - change matters related to disclosure, suspension of use, correction, deletion, suspension of provision or revoking of consent
  - change the contact information for inquiry
+
