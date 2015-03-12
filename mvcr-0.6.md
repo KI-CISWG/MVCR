@@ -37,7 +37,7 @@ The Minimum Viable Consent Receipt (MVCR) specification will provide a generic s
 
 # Scope
 
-This v.06  MVCR specification further defines the requirements for a Minimum Viable Consent Receipt(MVCR). In this version the scope is limited to the context of when a user takes an action to consent to sharing information. An action that can be taken to mean consent for personal information collection. This consent can occur before, during or immediately after their personal information is collected.
+This v.06  MVCR specification further defines the requirements for a Minimum Viable Consent Receipt(MVCR). In this version the scope is limited to the context of when a user takes an action to consent to sharing information, noting that personal data will be collected in a consent transaction. This consent can occur before, during or immediately after their personal information is collected. 
 
 The receipt format is human and machine readable and may include icons. It will be accessible.
 
