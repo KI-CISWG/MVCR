@@ -61,8 +61,8 @@ The word “SHOULD” indicates a recommendation and does not impose an obligati
   a) Issuer
   b) Date
   c) Time
-  d) direct contact information to data controller
-  e) Contain a static Link to privacy policy
+  d) Direct contact information to data controller
+  e) Contain a static link to privacy policy; ; the user must have a permanent record of the text to which they agreed
   f) Purpose (s)
   g) YES or NO Flags
     * 3rd party data sharing
@@ -73,33 +73,19 @@ The word “SHOULD” indicates a recommendation and does not impose an obligati
 8. The payload SHOULD include the following information:
   a) the personal identifier used in the consent receipt
   b) some or all of the personally identifiable information to which the consent applies
-8. The receipt MUST be systematically usable and automatically discoverable
-9. Receipts MUST contain the minimum information to enable request for more information, if required
-10. Receipts MUST contain the minimum information to enable requests for more information, if required
+9. The receipt MUST be systematically usable and automatically discoverable
+10. Receipts MUST contain the minimum information to enable request for more information, if required
 
 ### Consent Notice Fields and Descriptions (TBF v.07)
 The fields consists of:
 * Contact information of Data Controller
 * Identity provided by the individual
 * Link to privacy policy
-Comments:
-JW: note: static link format required - raised by John W) (Comment: Note: For
-the consent receipt to be audit-able and verifiable the consent policy should
-be accessible by any entity with the URI for the policy. Subsequent changes to
-the policy should not invalidate the URI for the policy in effect with the CR
-was issued.)
-ML: Should we consider stipulating that the URI be domain.com/privacy by default for MVCR with no payload.
-JW: If the URI is not broken, but the policy has changed, how can this be known or addressed by the user?
-ML: If the privacy policy is apart of the payload of the receipt and this payload was signed by the policy provider. Or if the policy is registered and kept public by the registrar e.g. TOSBACK)
-
-
- * The purpose(s) listed: itemised on receipt
-
- * YES or NO Flags
+* The purpose(s) listed: itemised on receipt
+* YES or NO Flags
    * 3rd party data sharing
    * Sensitive Personal Data Collection
    * Context Scope and Requirements
-
 
 ### Consent Notice Fields and Descriptions (TBF v.07)
 
@@ -114,7 +100,6 @@ ML: If the privacy policy is apart of the payload of the receipt and this payloa
 | Personally Identifiable Information (PII) | Any information that (a) can be used to identify the Data Subject to whom such information relates, or (b) is or might be directly or indirectly linked to a Data Subject. | |
 | Sensitive Personally Identifiable Information (SPII) | This a flag in the consent receipt that is used for what is legally defined as sensitive and protected data, this varies from jurisdiction to jurisdiction. For this type of data explicit consent is required and a consent receipt extension is needed for this functionality. | Include health, financial, children’s data, sexual data, political/religious data, surveillance data,  (note I think this should include participation in identifying SPII |  |
 
-NOTE:  There are many different legal meaning of PII or Personally Identifiable Information across jurisdicions, courts and companies. In IDESG, we removed "identifiable" so that Personal Information was the term and we could specify it, without competing or confusing these other meanings. We could consider that here. -- mary
 
 # References and Further Reading
 The MVCR is written with terms and reference in context of:
