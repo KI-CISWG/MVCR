@@ -3,25 +3,26 @@
 
 # Abstract
 
-The Consent & Information Sharing Working Group (CISWG) is doumenting a minimum set of consent requirements for information sharing that are salient across jurisdictions and compliant with Fair Information Practice privacy instruments and standards.(see references)  These common requirements constitute the minimum viable consent receipt, specifying the minimum required policy links, consent fields and data formats to meet the minimum legal, transparency and trust obligations for information sharing.
+The Consent & Information Sharing Working Group (CISWG) is documenting a minimum set of requirements that will support informed consent on the part of the user. The goal is to identify the necessary information to make a transaction compliant with Fair Information Practice privacy instruments and standards (see References) regardless of legal jurisdiction. These common requirements constitute a Minimum Viable Consent Receipt (MVCR) specifying the minimum required policy links, consent fields, and data formats to meet the minimum legal, transparency, and trust obligations for information sharing.
 
 The core Consent Receipt (CR) specification refers to the legal notices required for compliant consent to be valid when collecting personal information. This is currently managed by organizations separately with bespoke policies that are closed to systematic use. The Consent Receipt is being designed to address this problem.
 
 # Status
 
-The 0.7 version of the MVCR specification is the *most minimum* and alpha format for testing and implementations.  Some fields are under review for inclusion.
+The 0.7 version of this specification documents the *minimum* required and offers an alpha format for testing and implementation.  Some fields are under review for inclusion in later versions of the specification.
 
 # Editors
 
 Mark Lizar
-Heather Flannagan
+
+Heather Flanagan
 
 
 ## Intellectual Property Rights
 
-This document is being developed by Kantara Initiative's Consent and Information Sharing Working Group; see <https://kantarainitiative.org/groups/ciswg/>. Participation is free and open, and all work contributed to the effort falls into the Reciprocal Royalty Free with Opt-Out to Reasonable And Non discriminatory (RAND) IPR policy <https://kantarainitiative.org/confluence/x/mQByAg>.
+This document is being developed by Kantara Initiative's Consent and Information Sharing Working Group (see <https://kantarainitiative.org/groups/ciswg/>). Participation in this group is free and open, and all work contributed to the effort falls into the Reciprocal Royalty Free with Opt-Out to Reasonable And Non discriminatory (RAND) IPR policy <https://kantarainitiative.org/confluence/x/mQByAg>.
 
-Kantara Initiative is a non-profit membership organization that connects businesses, consumers, governments, and citizens through innovations and programs that support more natively trust worthy on-line experiences. The mission of KI is to foster identity community harmonization, interoperability, innovation, and broad adoption through the development criteria for operational trust frameworks and deployment/usage best practices for privacy-respecting, secure access to trusted online services.
+Kantara Initiative (KI) is a non-profit membership organization that connects businesses, consumers, governments, and citizens through innovations and programs that support more natively trust worthy on-line experiences. The mission of KI is to foster identity community harmonization, interoperability, innovation, and broad adoption through the development criteria for operational trust frameworks and deployment/usage best practices for privacy-respecting, secure access to trusted online services.
 
 # TOC
 
@@ -29,9 +30,7 @@ Kantara Initiative is a non-profit membership organization that connects busines
 
 # Introduction
 
-The privacy and consent laws, customs, and current common practices are already in place on the internet and are a part of society.
-
-The minimum viable consent receipt is a simple specification of a few basic  elements common to consent across legal jurisdictions and across contexts.  Minimum in the MVCR means the least amount of fields to make the consent receipt viable.  Viable, in this context, means to use the consent receipt independently of the issuer and have the minimum notice requirements for the company.
+The Minimum Viable Consent Receipt (MVCR) is a simple specification that describes a few basic elements common to consent across several legal jurisdictions and across a variety of contexts.  The term 'Minimum' in the MVCR refers to the least amount of fields to make a consent receipt viable.  Viable, in this context, means to use the consent receipt independently of the issuer. The consent receipt should involve a minimal set of  notice requirements for the company or organization issuing the receipt.
 
 The fields in this v0.7 specification are the Alpha MVCR fields that the CISWG will use to implement and test the consent receipt.
 
@@ -48,10 +47,11 @@ PI - Personal Information
 
 # Terminology (TBF v0.8)
 
-MVCR - as defined above
-Purpose Specification
+[AQ: Is this list of terms necessary, or should this section be narrowed down to indicate that the privacy and consent terminology used are derived from ISO 29100?]
+
+Purpose Specification - [definition needed]
 Personal Information - all attributes that are collected about the individual and the consent session can be deemed personal.
-Information Sharing
+Information Sharing - [definition needed]
 Sensitive Personal Information Categories- refer to the legal categories defined in some jurisdictions like the EU and the US, which have additional notice and consent requirements.
 
 Note: terminology reference for this project is ISO 29100
@@ -59,30 +59,28 @@ Note: terminology reference for this project is ISO 29100
 
 # Problem Statement(s)
 
-Consent is closed.
-There is no common consent record format.
+The MVCR seeks to solve for a variety of problems that exist in the online marketplace today.
 
-Each organization has their own unique privacy policy, policy structures and policy formats.  
+## Consent is a unique and closed construct per context
+There is no common consent record format, making it difficult for a user to know what they have consented to when presented with different sites and interfaces.  Each organization has their own unique privacy policy, policy structures and policy formats, again making it difficult for a user to know what they are consenting to from one site or service to the next.  These things violate the Openness Privacy Principles found in FIPPs, APEC, Canadian and European Law.  
 
-This violates the Openness Privacy Principles found in FIPPs, APEC, Canadian and European Law.  
+As a result, people have the burden to read, understand policies, log in to each service provider separately to select preferences and access personal data controls.  
 
-The result, people have the burden to read, understand policies, log in to each service provider separately to select preferences and access personal data controls.  
+## Cost, Regulation & Usability
+Consent management is very costly to manage for all stakeholders,  difficult to regulate, and unusable for people at scale. The scale, however, continues to grow at a phenomenal rate with 90% of all data in the world has been created in the last two years.  
 
-Cost, Regulation & Usability
-Consent management is very costly to manage for all stakeholders, very difficult to regulate and un-usable for people on scale.  Yet, information sharing is growing at a phenomenal rate. 90% of all data in the world has been created in the last two years.  
-
-Not Scalable
+## Consent is Not Scalable
 
 This is compounded by each organization posting their policies in different locations, while frequently changing not only the content but also the URI of the policies.
 
-There is no common consent record format and consent is closed.  As information sharing relationships increases the ability to managing consent and data control also needs to increase.
+As described above, there is no common consent record format and consent is closed.  As the scale of information sharing relationships increases, the ability to managing consent and data control needs to scale accordingly.
 
 # The Solution
-Open Consent, provide people with a consent receipt.  The act of providing a consent record alone demonstrates the capacity for compliance and builds trust with the management of personal data.
+The solution is an open consent model that provides people with a simple, standardized, easy-to-read consent receipt.  The act of providing a consent record will demonstrate the capacity for compliance and build trust with the management of personal data.
 
-A common consent receipt format will enable people to communicate about  consent after the point at which it is provided.
+A common consent receipt format will enable people to communicate about consent after the point at which it is provided.
 
-This transparency makes consent more usable becuase it provides the means for people and CRM systems to evolve greater personal data control in line with regulation and context.
+This transparency makes consent more usable because it provides the means for people and CRM systems to evolve greater personal data control in line with regulation and context.
 
 
 # Scope
@@ -108,21 +106,24 @@ The MVCR is broken down into 5 sections for usability and to aid in understandin
 4. Personal Information
 5. Information Sharing
 
-S1: Header - administrative data for a consent receipt
+### Header
+The administrative data for a consent receipt
 
-S2: Contact & Policy - Contact provides a channel for preference  communication and the privacy policy the basis.  Contact  includes the name, address and direct contact information.  The quality and service level of the contact information can vary dramatically.
+### Contact & Policy
+Contact provides a channel for preference  communication and the privacy policy the basis.  Contact  includes the name, address and direct contact information.  The quality and service level of the contact information can vary dramatically.
 
-S3: Purpose Specifications - The purpose should be explicit, specified and legitimate.  Specifying the service name and the action for using personal information is required.  This can be used post consent for Preference management, privileges/roles assignment and access authorization policy.
+### Purpose Specification
+The purpose should be explicit, specified and legitimate.  Specifying the service name and the action for using personal information is required.  This can be used post consent for Preference management, privileges/roles assignment and access authorization policy.
 
-S4: Personal Information -  Split into two types A) PI, B) Sensitive PI
+### Personal Information
+Split into two types: 
+A) PI (the data captured at the point of consent, as well as the categories of PI that the Data Controller (consent button installer) defines when creating the consent receipt button (e.g., IP Address, DNT Header))
 
-A) PI - is the data captured at the point of consent,  as well as the  categories of PI that the Data Controller (consent button installer) defines when creating the consent receipt button.  (For example; IP Address, DNT Header)
-
-B) Sensitive PI - Category of PI, with check boxes that are ticked by the creator of the consent receipt button.
+B) Sensitive PI (a category of PI, with check boxes that are ticked by the creator of the consent receipt button.
 
 These categories have legal notice and consent requirements in some jurisdictions that is beyond the scope of the MVCR format, but are required in various jurisdictions and context.  
 
-In the MVCR, if a Sensitive data Category is selected then additional notice and purpose requirements exists.
+In the MVCR, if a Sensitive data category is selected then additional notice and purpose requirements exists.
 
 For example:  A very common Sensitive category list would be:
  Health  [X]
@@ -133,7 +134,8 @@ For example:  A very common Sensitive category list would be:
 
 In this example if the data capture was doctor or health related in the US, then health should be checked above and a HIPPA compliant purpose list and PI category list can then be added or linked to this receipt.
 
-S5: Information Sharing - In the MVCR this is a Y/N flag, and if yes then the 3rd parties, the data categories and the purpose can be listed here.
+### Information Sharing.
+In the MVCR this is a Y/N flag, and if yes then the 3rd parties, the data categories and the purpose can be listed here.
 
 (Note: TBD In v0.8 binding roles and policy)
 
@@ -146,18 +148,18 @@ S5: Information Sharing - In the MVCR this is a Y/N flag, and if yes then the 3r
  * Review OAuth Scopes
  * Review and what is —> Audience URI
 
-## Field Description Table; Field, Logic, JWT Claim
+## Field Description Table: Field, Logic, JWT Claim
 
 table can be found at : https://kantarainitiative.org/confluence/display/infosharing/MVCR%3A+Core+Consent+Receipt+Profile+v0.7
                         |
 
 ### Consent Receipt Generator (CRG) Example
 
-The consent receipt generator can be found at
+A prototype for a consent receipt generator can be found at
 
 http://api.consentreceipt.org/
 
-This example site consits of two pages
+This example site consists of two pages
 1. for the Consent Receipt Generator Input Example and Receipt Rendering, this is used to develop implementations and see how the consent receipt (GitHub repository) code works.
 
 The github repository for this code is
@@ -194,6 +196,8 @@ http://www.consentreceipt.org/api
 (Note: At the moment 1-Aug-2015 It is out of sync with this v0.7 of the specification, when it is in sync it should be pated here)
 
 # References and Further Reading
+[AQ: The References section will need to be restructured to link to specific citation points in the text. Should that be done for 0.7 or at a later version of the draft?]
+
 The MVCR is written with reference to terminology found in:
 * ISO/IEC 29100	Information technology – Security techniques – Privacy framework
 * ISO/IEC 29115	Information technology – Security techniques – Entity Authentication Assurance
@@ -202,7 +206,9 @@ Supporting reference to ISTPA: Analysis of privacy principles:
 * ISTPA, (2007) Analysis of Privacy Principals, pg. 64, [Online] http://www.istpa.org/ [Accessed Nov, 4 2010]
 * Minister of Economy Office, Japan (2014) Guideline for the online notice and consent from consumers, http://www.meti.go.jp/press/2014/10/20141017002/20141017002a.pdf.  [Includes examples of a consent receipt in guidelines proposed in the context of ISO 29100]
 
-## Appendix A: Generic Requirements
+# Appendix A: Generic Requirements
+
+[AQ: Given the usage pattern very similar to the RFC 2119 requirements language, do you want to reference that document instead of redefining the terms? Do you want to use requirements language outside the Appendix, in the body of the specification?]
 
 "MUST" indicates a required component, the word “SHOULD” indicates a recommendation and does not impose an obligation. The word "CAN" means that this is a common option.
 
@@ -231,5 +237,3 @@ Supporting reference to ISTPA: Analysis of privacy principles:
 9. Receipts MUST contain the minimum information to enable request for more information, if required
 10. Receipts MUST contain the minimum information to enable requests for more information, if required
 
-
-******
