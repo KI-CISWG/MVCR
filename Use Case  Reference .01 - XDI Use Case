@@ -28,8 +28,8 @@ This walk-through demo is intended to demonstrate how a consent receipt can be s
 
 1. DS goes to amazonrespect.com website
 2. Website presents form and asks for consent:
-1. either to sign up initially, or
-2. for additional consent and profile management when already logged in
+  a. either to sign up initially, or
+  b. for additional consent and profile management when already logged in
 3. DS agrees (clicks on “i agree” button)
 4. DC website initiates creating a receipt for the consent just given.
 5. DC checks for reciept data collection and notice extensions and finishes creating the receipt.
@@ -49,6 +49,7 @@ The signed receipt is embedded in the popup window.
 11. DS types cloud name =alice
 12. Popup window runs XDI discovery to find DS’ RN cloud
 13. Popup window sends an XDI message to DS’ RN cloud to store the signed receipt
+
 The Re-usability of a MVCR can then be made scalable for re-use in aggregate. This is beyond the point of consent for the data subject, with a process in whch the receipt is digitally signed by both parties.
 This process also identifies the jurisdiction of the Data Controller and of the Data Subject. This example includes signing of the receipt by the DC. (Note: The digital signing of the  DS (data subject) is currently out of scope of the first draft1.)
 MVCR Mock Up for Amazon Respect Use Case
