@@ -192,18 +192,18 @@ The use cases are currently active, the use case status page can be found at the
 
 ## Implementation Use Cases
 
-# Join Form Can Be Found here (https://kantarainitiative.org/signup/?selectedGroup=3)
+### Join Form Can Be Found here (https://kantarainitiative.org/signup/?selectedGroup=3)
 
 This is the CIS WG implementation for joining the work group.  (dog food in progress)
 
-#  Consent Receipt.Org Website (TBD http://www.consentreceipt.org)
+####  Consent Receipt.Org Website (TBD http://www.consentreceipt.org)
 This is a landing page for the consent receipt that will increase access to the CR work. 
 
-# Proposed CIS-Use Case  for MVCR (TBD v0.8)
+### Proposed CIS-Use Case  for MVCR (TBD v0.8)
 
 Create g a  Consent Receipt Button Generator for website implementation. 
 
-## Field Description Table: Field, Logic, JWT Claim
+### Field Description Table: Field, Logic, JWT Claim
 
 Current table can be found at : https://kantarainitiative.org/confluence/display/infosharing/MVCR%3A+Core+Consent+Receipt+Profile+v0.7
 This is actively being develiped in the Consent & Infomration sharing WG, which can be found at https://kantarainitiative.org/confluence/display/infosharing/Home
