@@ -3,18 +3,17 @@
 
 # Abstract
 
-The Consent & Information Sharing Working Group (CISWG) is documenting a minimum set of requirements that will support informed consent on the part of the user. The goal is to identify the necessary information to make a transaction compliant with Fair Information Practice privacy instruments and standards (see References) regardless of legal jurisdiction. These common requirements constitute a Minimum Viable Consent Receipt (MVCR) specifying the minimum required policy links, consent fields, and data formats to meet the minimum legal, transparency, and trust obligations for information sharing.
+The Consent & Information Sharing Working Group (CISWG) is documenting a minimum set of requirements that will support informed consent on the part of the user. The goal is to identify the necessary information to make a transaction compliant with Fair Information Practice privacy instruments and standards (see References) regardless of legal jurisdiction. These common requirements constitute a Minimum Viable Consent Receipt (MVCR) specifying the minimum required policy links, consent fields, and data formats to meet the minimum legal, transparency, and trust obligations for information sharing based on explicit consent.
 
-The core Consent Receipt (CR) specification refers to the legal notices required for compliant consent to be valid when collecting personal information. This is currently managed by organizations separately with bespoke policies that are closed to systematic use. The Consent Receipt is being designed to address this problem.
+The core Consent Receipt (CR) specification refers to the legal notices required for compliant consent to be valid when collecting personal information. 
 
 # Status
 
-The 0.7 version of this specification documents the *minimum* required and offers an alpha format for testing and implementation.  Some fields are under review for inclusion in later versions of the specification.
+The 0.7 version of this specification documents the *minimum* required and offers an alpha format for testing and implementation.  This version of the specification is intentionally as flexible as possible in order to accomadate the widest range of use cases for implementation.  Some fields are under review for inclusion in the next version of the specification.
 
 # Editors
 
 Mark Lizar
-
 Heather Flanagan
 
 
@@ -50,7 +49,6 @@ PI - Personal Information
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
 document are to be interpreted as described in RFC 2119 [http://www.rfc-editor.org/info/rfc2119].
 
-[AQ: Is this list of terms necessary, or should this section be narrowed down to indicate that the privacy and consent terminology used are derived from ISO 29100?]
 
 Privacy and Consent Terminology are mapped to the ISO 29100 which provides a basis for privacy standardizations for:
 - technical reference architectures;
@@ -62,9 +60,9 @@ Privacy and Consent Terminology are mapped to the ISO 29100 which provides a bas
 There are terms in this specification that are not referenced in 29100 and these are listed here:
 (NOTE: Terms to be formalised v.0.9)
 
-Purpose Specification - [definition needed]
+Purpose Specification - [definition to be completed]
 Personal Information - all attributes that are collected about the individual and the consent session can be deemed personal.
-Information Sharing - [definition needed]
+Information Sharing - [definition  to be completed]
 Sensitive Personal Information Categories - refer to the legal categories defined in some jurisdictions like the EU and the US, which have additional notice and consent requirements.
 Individual - this is referred to in this document and maps to existing terms, Data Subject in ISO 29100 this Principal, Person.
 Bind - 
@@ -88,9 +86,9 @@ As described above, there is no common consent record format and no standard pra
 This is compounded by each organization posting their policies in different locations, using different trust frameworks, different technology and using different practices.   
 
 # The Solution
-The solution is an 'open consent' model that provides people with a simple, standardized, easy-to-read consent record.  The act of providing a consent record itself demonstrates the capacity for compliance and builds trust with the management of personal data.
+The solution is an 'open consent' model that provides people with a simple, standardized, easy-to-read consent record.  The act of providing a consent record itself demonstrates the capacity for compliance and builds trust with the management of personal data.  
 
-A common consent receipt format will enable people to communicate about consent after the point at which it is provided and by so doing build reputations viewable before entering into the service.
+A common consent receipt format can be used as the first layer in layering privacy policy and it can be used to communicate about consent after the point at which it is provided.  By its use alon it builds reputations viewable before entering into the service.
 
 This transparency makes consent more usable as it provides the means for people and CRM systems to evolve towards greater personal data control in line with regulation and context.
 
@@ -108,7 +106,7 @@ The scope of the MVCR is limited to defining the minimum consent fields for an e
 
 ## Design Principles (TBD v0.8)
 
-## Functional Objective (TBD v0.8)
+## Functional Objective (TBF v0.8)
 
 ## 5 Sections
 The MVCR is broken down into 5 sections for usability and to aid in understanding the core function. The 5 sections are:
@@ -118,17 +116,19 @@ The MVCR is broken down into 5 sections for usability and to aid in understandin
 4. Personal Information
 5. Information Sharing
 
+The order is specific and Must be followed for it to be systematic, it is designed so that the purpose and PI categories can be used and referenced for specifying Information sharing. 
+
 ### Header
-The administrative data for a consent receipt, which MUST include, the jurisdiction, time and date stamp, location of processing (i.e. domain name), unique consent record id, and recieving parties point of contact. (email address for v0.7)
+The administrative data for a consent receipt, which MUST include, the jurisdiction, time and date stamp, location of processing (i.e. domain name), unique consent record id, and recieving parties point of contact. (email address is recommended default for v0.7)
 
 ### Data Controller Contact & Policy
 The consent receipt MUST contain name or title and the contact information of DC, if this is a delegated DC, this information primary purpose is for preference communication in the context of the privacy policy.  Contact MUST includes the address and direct contact information for consent management.  The quality and service level of the contact information can vary dramatically. 
 
 ### Purpose Specification
 The purpose MUST be explicit, specified and legitimate.  
-The purpose MUST contain the service name to be explicit and the action requiring this purpose, it SHOULD contain an external reference to an on and off preference, for this purpose. Finally, a purpose specification MAY contain additional options, for example, trust mark icon link, data retention.  (Note: requires a footnote - reason should contain reference to on and off is due to legal regulation that people be able to withdraw consent or stop the processing of PI)
+The purpose MUST contain the service name to be explicit and the specific purpose, it SHOULD contain an external reference to an on and off preference for this purpose. Finally, a purpose specification MAY contain additional options, for example, trust mark icon link, data retention, a link to the purpose description in the policy.  (Note: requires a footnote - reason should contain reference to - test if  an on and off can be used to meet legal obligations to withdraw consent or stop the processing of PI in some jurisdictions.)
 
-Specifying the service name and the purpose for using personal information is required.  This can be used post consent for preference management, privileges/roles assignment, consent directives and other access authorization policy.
+Specifying the service name and the purpose for using personal information is required.  This can be used post consent for preference management, privileges/roles assignment, consent directives and other access or authorization policy requirements.
 
 [Note: A common Purpose list, definitions of these purposes, and guidance/best practices are being discussed with recommendations to be found in Appendix A] 
 
@@ -192,16 +192,16 @@ The use cases are currently active, the use case status page can be found at the
 
 ## Implementation Use Cases
 
-### Join Form Can Be Found here (https://kantarainitiative.org/signup/?selectedGroup=3)
+### Join Form Can Be Found here (https://kantarainitiative.org/signup/) select CISWG to get the consent receipt as an option to joining the work group. (note: there is also an option to check if the receipt is for test purposes)
 
 This is the CIS WG implementation for joining the work group.  (dog food in progress)
 
-####  Consent Receipt.Org Website (TBD http://www.consentreceipt.org)
+####  Consent Receipt.Org Website (TBD v0.8 http://www.consentreceipt.org)
 This is a landing page for the consent receipt that will increase access to the CR work. 
 
 ### Proposed CIS-Use Case  for MVCR (TBD v0.8)
 
-Create g a  Consent Receipt Button Generator for website implementation. 
+Create a  Consent Receipt Button Generator for website implementation, as well as a receipt template for the MVCR v0.7. 
 
 ### Field Description Table: Field, Logic, JWT Claim
 
@@ -211,7 +211,7 @@ This is actively being develiped in the Consent & Infomration sharing WG, which 
 
 ### Consent Receipt Generator (CRG)
 
-A prototype for generating a consent receipt with the MVCR API can be found at
+A prototype for generating a consent receipt with the MVCR API can be found at (Note: This is not a prototype of the MVCR v0.7, but a strawman)
 
 http://api.consentreceipt.org/
 
@@ -262,10 +262,6 @@ Supporting reference to ISTPA: Analysis of privacy principles:
 * Minister of Economy Office, Japan (2014) Guideline for the online notice and consent from consumers, http://www.meti.go.jp/press/2014/10/20141017002/20141017002a.pdf.  [Includes examples of a consent receipt in guidelines proposed in the context of ISO 29100]
 
 # Appendix A: Generic Requirements
-
-[AQ: Given the usage pattern very similar to the RFC 2119 requirements language, do you want to reference that document instead of redefining the terms? Do you want to use requirements language outside the Appendix, in the body of the specification?]
-
-"MUST" indicates a required component, the word “SHOULD” indicates a recommendation and does not impose an obligation. The word "CAN" means that this is a common option.
 
 1. The receipt MUST have a property to authenticate the origin.
 2. The receipt MUST have an integrity protection property.
