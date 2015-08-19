@@ -294,40 +294,41 @@ Supporting reference to ISTPA: Analysis of privacy principles:
 
 [The following is vectored in from https://github.com/RichardBeaumont/MVCR/commit/399c5a503890d79f788d52ee572fe01138f07cf7]
 
-+The Uses of Personal Data - Purpose Specification
-+
-+1.	Enabling us to carry out the core functions of our site/app/services.
-+2.	Providing contracted or requested services to you.
-+3.	Delivering physical goods to you.
-+4.	Communicating with you about information or services you specifically request.
-+5.	Providing you with a personalised experience of our site/app/service.
-+6.	Communicating with you about our other services you may be interested in.
-+7.	Communicating with you about the services of third parties you may be interested in.
-+8.	Providing the information to third parties to deliver our services on our behalf.
-+9.	Providing the information to third parties to enable them to communicate with you about their own services you may be interested in.
-+10.	Providing the information to third parties to enable them to deliver or improve their own services to you.
-+11.	Providing the information to third parties to enable them to deliver or improve their own services to others.
-+12.	Complying with our legal obligations for record keeping.
-+13.	Complying with our legal obligations to provide the information to law enforcement or other regulatory/government bodies.
-+14.	Protecting your vital and health interests.
-+15.	Protecting our legitimate interests, yours or those of a third party.
-+16.	Measure or improve our performance or the delivery of our services.
-+
-+Categories of Personal Data (explainers/examples)
-+
-+1.	Biographical – (General information like Name, DOB, Family info (mother’s maiden name), marital status. Historical data like educational achievement, general employment history.)
-+2.	Contact – (Address, Email, Telephone Number, etc.)
-+3.	Biometric – (Photos, fingerprints, DNA.  General physical characteristics – height, weight, hair colour.  Racial/ethnic origin or identification - whether self-identified or not)
-+4.	Communications/Social – (Email, message and phone records – both content and metadata.  Friends and contacts data.)
-+5.	Network/Service – (Login ids, usernames, passwords, server log data, IP addresses, cookie-type identifiers)
-+6.	Health – (Ailments, treatments, family doctor info.  X-rays and other medical scan data)
-+7.	Financial – (This includes information such as bank account, credit card data. Income and tax records, financial assets/liabilities, purchase/sale of assets history.)
-+8.	Official/Government Identifiers – (This includes any widely recognised identifiers that link to individual people.  Examples include National Insurance, ID card, Social security, passport and driving licence numbers, NHS number (UK).  Just the numbers rather than data associated with them.)
-+9.	Social Services/Welfare – (Welfare and benefits status and history)
-+10.	Judicial – (Criminal and police records, inc. traffic offenses.)
-+11.	Property/Asset – (Identifiers of property – licence plate numbers, MAC addresses for mobiles, other device identifiers. Not financial assets. Could include digital assets like ebook and digital music data)
-+12.	Human Resources – (Records held about employees/ members/ students  not elsewhere defined. Incl. HR records such as job title, attendance/disciplinary records.  Salary - as opposed to income.)
-+13.	Psychological/Attitudinal – (Inc. religious, political beliefs, sexual orientation and gender identity – though not genetic gender which is Biometric. Traits and personality measures or assessments, but not psychological health - which is health data).
-+14.	Membership – (Political, trade union affiliations, any other opt-in organisational/group membership data - third party organisations only. Includes name of employer when not held by employer. Could extend to online platform membership.  Some might be more sensitive than others – may want a separate category)
-+15.	Behavioural – (Any data about the behaviour, habits or movements of an individual - electronic or physical. Location, browser/search history, web page usage (analytics), energy usage (smart meters), login history, calendar data, etc.)
-+16.	Profile – (Marketing and social segmentation data.  Any categorisation that impacts information presented or decisions made about an individual. This might be observed or derived data (algorithmic) or volunteered by the individual. Profile data is often generated from Behavioural data).
++This appendix provide a default purpose list  and Personal Data list that SHOULD be used for MVCR implementations  
+
+- 1.	Enabling us to carry out the core functions of our site/app/services.
+- 2.	Providing contracted or requested services to you.
+- 3.	Delivering physical goods to you.
+- 4.	Communicating with you about information or services you specifically request.
+- 5.	Providing you with a personalised experience of our site/app/service.
+- 6.	Communicating with you about our other services you may be interested in.
+- 7.	Communicating with you about the services of third parties you may be interested in.
+- 8.	Providing the information to third parties to deliver our services on our behalf.
+- 9.	Providing the information to third parties to enable them to communicate with you about their own services you may be interested in.
+- 10.	Providing the information to third parties to enable them to deliver or improve their own services to you.
+- 11.	Providing the information to third parties to enable them to deliver or improve their own services to others.
+- 12.	Complying with our legal obligations for record keeping.
+- 13.	Complying with our legal obligations to provide the information to law enforcement or other regulatory/government bodies.
+- 14.	Protecting your vital and health interests.
+- 15.	Protecting our legitimate interests, yours or those of a third party.
+- 16.	Measure or improve our performance or the delivery of our services.
+
+
+### Appendix C: Categories of Personal Data (explainers/examples)
+
+- 1.	Biographical – (General information like Name, DOB, Family info (mother’s maiden name), marital status. Historical data like educational achievement, general employment history.)
+- 2.	Contact – (Address, Email, Telephone Number, etc.)
+- 3.	Biometric – (Photos, fingerprints, DNA.  General physical characteristics – height, weight, hair colour.  Racial/ethnic origin or identification - whether self-identified or not)
+- 4.	Communications/Social – (Email, message and phone records – both content and metadata.  Friends and contacts data.)
+- 5.	Network/Service – (Login ids, usernames, passwords, server log data, IP addresses, cookie-type identifiers)
+- 6.	Health – (Ailments, treatments, family doctor info.  X-rays and other medical scan data)
+- 7.	Financial – (This includes information such as bank account, credit card data. Income and tax records, financial assets/liabilities, purchase/sale of assets history.)
+- 8.	Official/Government Identifiers – (This includes any widely recognised identifiers that link to individual people.  Examples include National Insurance, ID card, Social security, passport and driving licence numbers, NHS number (UK).  Just the numbers rather than data associated with them.)
+- 9.	Social Services/Welfare – (Welfare and benefits status and history)
+- 10.	Judicial – (Criminal and police records, inc. traffic offenses.)
+- 11.	Property/Asset – (Identifiers of property – licence plate numbers, MAC addresses for mobiles, other device identifiers. Not financial assets. Could include digital assets like ebook and digital music data)
+- 12.	Human Resources – (Records held about employees/ members/ students  not elsewhere defined. Incl. HR records such as job title, attendance/disciplinary records.  Salary - as opposed to income.)
+- 13.	Psychological/Attitudinal – (Inc. religious, political beliefs, sexual orientation and gender identity – though not genetic gender which is Biometric. Traits and personality measures or assessments, but not psychological health - which is health data).
+- 14.	Membership – (Political, trade union affiliations, any other opt-in organisational/group membership data - third party organisations only. Includes name of employer when not held by employer. Could extend to online platform membership.  Some might be more sensitive than others – may want a separate category)
+- 15.	Behavioural – (Any data about the behaviour, habits or movements of an individual - electronic or physical. Location, browser/search history, web page usage (analytics), energy usage (smart meters), login history, calendar data, etc.)
+- 16.	Profile – (Marketing and social segmentation data.  Any categorisation that impacts information presented or decisions made about an individual. This might be observed or derived data (algorithmic) or volunteered by the individual. Profile data is often generated from Behavioural data).
